@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DoggoCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ulx-4r-hWc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fY-O4-jEF" userLabel="Currency Picker">
+                                <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="PBR-Iz-FFK"/>
+                                </constraints>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="agS-Xi-a4J">
+                                <rect key="frame" x="0.0" y="44" width="414" height="136"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DoggoCoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb2-y4-X20" userLabel="DoggoCoin Label">
+                                        <rect key="frame" x="109.5" y="0.0" width="195" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="0.94509803921568625" green="0.32941176470588235" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6w-vp-BKb" userLabel="Coin View">
+                                        <rect key="frame" x="72" y="56" width="270" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-qo-Ifs">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogeCoin Logo" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-ZJ-wul">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <color key="tintColor" name="Icon Color"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="So6-1W-Q37"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdt-XR-4fg">
+                                                        <rect key="frame" x="90" y="25" width="80" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ize-8H-oxA">
+                                                        <rect key="frame" x="180" y="25" width="80" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="HpM-ZJ-wul" secondAttribute="bottom" id="l4G-uL-I9k"/>
+                                                    <constraint firstItem="HpM-ZJ-wul" firstAttribute="top" secondItem="AbU-qo-Ifs" secondAttribute="top" id="mHW-nu-IX7"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="3Gz-9G-Y8L"/>
+                                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="AbU-qo-Ifs" firstAttribute="top" secondItem="Y6w-vp-BKb" secondAttribute="top" id="0jb-DI-Bcv"/>
+                                            <constraint firstAttribute="trailing" secondItem="AbU-qo-Ifs" secondAttribute="trailing" constant="10" id="4H0-cn-9RX"/>
+                                            <constraint firstItem="AbU-qo-Ifs" firstAttribute="leading" secondItem="Y6w-vp-BKb" secondAttribute="leading" id="H9I-lY-n9b"/>
+                                            <constraint firstAttribute="height" constant="80" id="kyz-ia-64l"/>
+                                            <constraint firstAttribute="bottom" secondItem="AbU-qo-Ifs" secondAttribute="bottom" id="my7-CU-AgP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udE-1V-jYY">
+                                <rect key="frame" x="84.5" y="424" width="245" height="48.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Crypto Market Cap &amp; 
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Pricing Data Provided By Nomics">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="attributionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ck4-jI-lh1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="agS-Xi-a4J" secondAttribute="trailing" id="17f-F2-Mka"/>
+                            <constraint firstItem="9fY-O4-jEF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3dm-Vf-5FF"/>
+                            <constraint firstItem="agS-Xi-a4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bb-ty-FZh"/>
+                            <constraint firstItem="ulx-4r-hWc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ATD-4J-FVX"/>
+                            <constraint firstItem="9fY-O4-jEF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bxo-Oq-F2d"/>
+                            <constraint firstItem="9fY-O4-jEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K2v-Rl-pWG"/>
+                            <constraint firstItem="udE-1V-jYY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L3X-ej-3jS"/>
+                            <constraint firstItem="agS-Xi-a4J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Na5-2C-BmJ"/>
+                            <constraint firstItem="9fY-O4-jEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TYe-ZG-2cZ"/>
+                            <constraint firstItem="ulx-4r-hWc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="XuT-xe-NfC"/>
+                            <constraint firstItem="agS-Xi-a4J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cMR-AN-Q6c"/>
+                            <constraint firstItem="9fY-O4-jEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="giV-Rd-jLE"/>
+                            <constraint firstItem="ulx-4r-hWc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nX0-U7-ZfV"/>
+                            <constraint firstAttribute="bottom" secondItem="ulx-4r-hWc" secondAttribute="bottom" id="qs8-em-VwK"/>
+                            <constraint firstItem="udE-1V-jYY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ruz-n1-LK3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attributionButton" destination="udE-1V-jYY" id="5at-0J-Wsb"/>
+                        <outlet property="currencyLabel" destination="ize-8H-oxA" id="TzV-iZ-Ldo"/>
+                        <outlet property="currencyPicker" destination="9fY-O4-jEF" id="T7g-TF-0rP"/>
+                        <outlet property="priceLabel" destination="Cdt-XR-4fg" id="CtK-hM-e35"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DogeCoin Logo" width="256" height="256"/>
+        <image name="background" width="1700" height="3500"/>
+        <namedColor name="Icon Color">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
