@@ -7,13 +7,9 @@
 
 <div id="overview">
   <h2> Overview </h2> 
-  <p> DoggoCoin is an iOS application that displays current DogeCoin price in different currencies </p>
+  <p> DoggoCoin is an iOS application that displays current DogeCoin price in different currencies. </p>
   <br>
-  <p> It's created to demonstrate the following: </p>
-  <ul>
-    <li> Parse JSON using JSONDecoder </li>
-    <li> Work with APIs by making HTTP requests using URLSession </li>
-    <li> Use protocols and Delegate Design Pattern </li>
-    <li> Work with Picker View to change currencies </li>
-  </ul>
+  <p> Using a Picker View, you will be able to change the specified currency.</p>
+  <p> Then the data is retrieved using Nomics API and parsed using JSONDecoder.</p>
+  <p> The app uses delegate pattern and conforms to MVC design pattern.</p>
 </div>
