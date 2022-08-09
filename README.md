@@ -1,21 +1,46 @@
+# DoggoCoin
 
-<div id="title">
-  <h1> DoggoCoin </h1>
-  <img src="https://github.com/jonathanvieri/DoggoCoin/blob/main/App-Preview.gif" width="400" height="800" />
-</div>
+<p align="left">
+  <img src="https://github.com/jonathanvieri/doggocoin/blob/main/images/applogo.png" width="150" height="150">
+</p>
+
+DoggoCoin is a simple cryptocurrency price checking app, specifically for Dogecoin.  
+
+This project is made to demonstrate the usage of API Call and JSON Parsing in Storyboard.  
+The app can be extended by adding recent prices, max/min price for the day, etc.  
+The app can also be modified to check for other cryptocurrency price.  
 
 
-<div id="overview">
-  <h2> Overview </h2> 
-  <p> DoggoCoin is an iOS application that displays current DogeCoin price in different currencies. </p>
-  <p> It currently support 20 currencies, and because I'm using a free API the maximum number of request is limited.</p>
-  <br>
-</div>
+## Screenshots 
+<p>
+  <img src="https://github.com/jonathanvieri/doggocoin/blob/main/images/DoggoCoinExample1.png" height="350">
+  &emsp;&emsp;
+  <img src="https://github.com/jonathanvieri/doggocoin/blob/main/images/DoggoCoinExample2.png" height="350">
+</p>
 
-<div id="technicalOverview">
-  <h2> Technical Overview </h2>
-  <p> The app is designed using Storyboard.</p>
-  <p> Using a Picker View, you will be able to change the specified currency.</p>
-  <p> Then the data is retrieved using Nomics API and parsed using JSONDecoder.</p>
-  <p> The app uses delegate pattern and conforms to MVC design pattern.</p>
-</div>
+
+## Features
+* Get the latest price of Dogecoin in real-time
+* Change between 21 different currencies
+
+
+## Technical
+* Created using Storyboard
+* MVC design pattern
+* Delegate pattern to fetch the latest price
+* API Call using URLSession and JSONParsing using Codable protocol
+* Change between different currencies using Picker View
+
+
+## Usage
+1.  Clone the project
+2.  Fill the API Key in Constants file
+3.  Open and run the project in XCode
+
+
+## Credits
+Crypto pricing data is provided by [Nomics](https://nomics.com/)
+
+
+## License
+This project is licensed under the [MIT License](https://github.com/jonathanvieri/doggocoin/blob/master/LICENSE)
